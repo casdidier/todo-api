@@ -28,7 +28,6 @@ const addTodo = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         // typecasting to avoid typos and restrict the body variable to match ITodo
         const body = req.body;
-        console.log(body);
         const todo = new todo_1.default({
             name: body.name,
             description: body.description,
